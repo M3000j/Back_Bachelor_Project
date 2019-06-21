@@ -1,5 +1,5 @@
 # Back_Bachelor_Project
-Bachelor Programm
+Backgammon Programm
 It has 3 level AI->Easy,Medium,Hard
 For Easy level, I used random selection from possible moves which was for each dice
 For Medium level, I used Evaluation Function and selection based on it
