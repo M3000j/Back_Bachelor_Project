@@ -1,18 +1,6 @@
 # Back_Bachelor_Project
 Backgammon Programm
-It has 3 level AI->Easy,Medium,Hard
-For Easy level, I used random selection from possible moves which was for each dice
-For Medium level, I used Evaluation Function and selection based on it
-For Hard level,I used Selection based on tree:
-instead of making the whole tree, the tree is made from each dice and possible moves from each dice based on the number of dice 
-is made.
-
-for example if the number of dices are 3 & 4
-First:
-Possible moves of 3 is found, then based on these possible moves possible moves of 4 are found.(The left branch of tree)
-Second:
-Possible moves of 4 is found, then based on these possible moves possible moves of 3 are found.(The right branch of tree)
-
-by using evaluation function, each of the possible moves are scored and the max ones are selected from the each branch,after
-finding the max ones, from these two one of them,which has the most score,is selected and the following actions will be choosen
-from the branch which has the first selected possible move.
+This backgammon game has three difficulty levels: Easy, Medium, and Hard. For the Easy level, possible moves are selected randomly for each dice. For the medium and hard parts, a customized decision tree was used.
+For the medium level, The depth of the decision tree is considered one. I used the evaluation function to evaluate each possible checker's action and select the best move with the highest score. In the hard level, the depth of the decision tree will increase to 4 levels. Moreover, some places on the board are more important or strategic than others. So, the algorithm considers weights for each move based on their location.
+For example, if the number of dice is 3 and 4, the possible moves of 3 are first identified. Based on these possible moves, the possible movements of the four are then determined. This process will create the left branch of the tree. In the next phase, possible actions of 4 are found, and based on these possible moves, corresponding actions of 3 are located, which creates the right branch tree.
+Moves are scored using the evaluation function, and the highest ones are selected from each branch. The maximum score is determined by comparing the highest scores from the two branches, and the following actions are chosen from the first selected branch.
